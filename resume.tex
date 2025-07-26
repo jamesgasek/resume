@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape James Gasek} \\ \vspace{1pt}
+    Boston, MA \\ \vspace{8pt}
+    \small \raisebox{-0.1\height}\faPhone\ 978-333-1858 ~ \href{mailto:james@gasek.net}{\raisebox{-0.2\height}\faEnvelope\  \underline{james@gasek.net}} ~ 
+    \href{https://linkedin.com/in/devjamesgasek/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/devjamesgasek}}  ~
+    \href{https://github.com/jamesgasek}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/jamesgasek}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lehigh University}{Aug. 2020 -- Dec. 2023}
+      {Bachelor of Science in Computer Science and Business, Data Science (Completed Early)}{Bethlehem, PA}
+    \resumeSubheading
+      {Advanced Math and Science Academy Charter School}{Aug. 2016 -- May 2020}
+      {High School}{Marlborough, MA}
+  \resumeSubHeadingListEnd
+\vspace{-17pt}
+
+%-----------EXPERIENCE-----------
+\vspace{0.2cm}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amazon Robotics}{Dec. 2024 -- Present}
+      {Software Engineer, Robotic Sortation Technology - ML / Optimization}{North Reading, MA}
+      \resumeItemListStart
+        \resumeItem{Developed microservices using Go, Kotlin, and Scala on serverless AWS infrastructure, adhering to strict standards for monitoring, testing, and code safety to ensure constant uptime across Amazon's global network of Fulfillment Centers}
+        \resumeItem{Led the implementation of machine learning models to predict internal Fulfillment Center inefficiencies, with projected annual savings in the millions by optimizing robotic movement based on model insights}
+        \resumeItem{Implemented a new data fetching workflow for an internal Fulfillment Center dashboard project, reducing feature development time by over 60\% and doubling the number of features shipped per sprint}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon Robotics}{Summer 2023}
+      {Software Engineer Intern, QA Automation}{North Reading, MA}
+      \resumeItemListStart
+        \resumeItem{Developed serverless React application for viewing results of systems testing as part of the QA Automation team}
+        \resumeItem{Modeled infrastructure and CI/CD using AWS Cloud Development Kit (CDK)  "Infrastructure As Code" framework}
+        \resumeItem{Completed project two weeks ahead of schedule and tailored the product more closely to end-user needs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Structural Services}{Dec. 2021 -- May 2023}
+      {Software Engineer}{Bethlehem, PA}
+      \resumeItemListStart
+        \resumeItem{Lead developer of device interaction software for an AI-powered assistive system for the construction industry}
+        \resumeItem{Created multithreaded C++ programs to read, encode, process, and display camera and other sensor data wirelessly}
+        \resumeItem{Developed driver libraries for devices such as CV cameras, an SBG Systems IMU/GPS, and Micro-Epsilon LiDAR}
+        \resumeItem{Researched GPS technology and wrote software enabling centimeter-accurate GPS tracking using RTK positioning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\vspace{0.2cm}
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Loupt} $|$ \emph{Next.js, TypeScript, PostgreSQL} $|$ \href{https://loupt.co}{\underline{loupt.co}}}{2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Technical Co-Founder of a Regulation Crowdfunding platform aimed to democratize access to investment opportunities}
+            \resumeItem{Designed and deployed Node.js services and Next.js web application with PostgreSQL on ECS with AWS services}
+            \resumeItem{Integrated third-party APIs for investor KYC/AML, payment processing, and marketing automation}
+            \resumeItem{Led development team and worked closely with institutional investors and stakeholders}
+          \resumeItemListEnd
+\vspace{-14pt}
+
+      \resumeProjectHeading
+          {\textbf{Newton Notes} $|$ \emph{SwiftUI} $|$ \href{https://gasek.net/newtonnotes}{\underline{gasek.net/newtonnotes}}}{2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a minimalist, privacy-focused gym workout tracking application using pure SwiftUI}
+            \resumeItem{Implemented a clean, intuitive interface prioritizing simplicity and user privacy}
+            \resumeItem{Created as a free, open-source alternative to complex fitness tracking applications}
+          \resumeItemListEnd
+    \vspace{-14pt}
+
+    \resumeProjectHeading
+          {\textbf{CV Hazard Detection Model} $|$ \emph{Python, OpenCV, Keras, AWS SageMaker} $|$ {Lehigh Capstone - Fall 2023}}{2023}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned object detection model to dramatically increase performance of off-the-shelf models for autonomous cyclist assistance device with Bethlehem-based startup, Skillion}
+            \resumeItem{Used publicly available datasets including KITTI, Norwegian University of Science and Technology, and manually collected data labeled with in-house Python labeling program from Tesla Model S onboard camera}
+            \resumeItem{Achieved over 200x improvement in performance on nighttime headlight-facing captures}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{0.4cm}
+\section{Technical Skills - Most Experience First}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, TypeScript/JavaScript, C, Java, Python, Go, HTML/CSS, Shell, Swift/SwiftUI, Rust, Kotlin, Scala} \\
+     \textbf{Frameworks/Technologies}{: AWS CDK, Next.js, React/React Native, PostgreSQL, MongoDB, Node.js, Docker, GCP} \\
+     \textbf{Developer Tools}{:AWS, pgAdmin, Railway, Figma, Linux, CMake, Firebase, Xcode, Github Actions, LLMs} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
