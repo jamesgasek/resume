@@ -1,0 +1,55 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.bcf
+*.dvi
+*.fls
+*.fdb_latexmk
+*.idx
+*.ilg
+*.ind
+*.log
+*.lof
+*.lot
+*.nav
+*.out
+*.pdf 
+*.snm
+*.synctex.gz
+*.toc
+*.run.xml
+*.spl
+*.vrb
+*.vrc
+*.nlo
+*.nlg
+*.bak
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.xdy
+*.bpt
+*.tdo
+*.lol
+*.loq
+
+# Specific build tools/editors often create their own temporary files
+.latexmkrc
+*.swp    # Vim swap files
+*~       # Emacs auto-save files
+.#*      # Emacs lock files
+
+# macOS specific files
+.DS_Store
+
+# IDE specific files (e.g., VS Code)
+.vscode/
+
+# Custom commands or other non-source files that might be generated
+# If you have custom images or other assets, make sure they are NOT ignored

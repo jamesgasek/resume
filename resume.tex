@@ -1,3 +1,4 @@
+% !TeX root = resume.tex
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -73,6 +74,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeMinorEducation}[3]{
+  \vspace{-6pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -101,10 +109,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Lehigh University}{Aug. 2020 -- Dec. 2023}
-      {Bachelor of Science in Computer Science and Business, Data Science (Completed Early)}{Bethlehem, PA}
-    \resumeSubheading
-      {Advanced Math and Science Academy Charter School}{Aug. 2016 -- May 2020}
-      {High School}{Marlborough, MA}
+      {B.S., Computer Science and Business, Data Science (Completed Early)}{Bethlehem, PA}
+    \resumeMinorEducation
+      {Advanced Math and Science Academy Charter School }{Marlborough, MA}{} % Third parameter unused in command; left empty
   \resumeSubHeadingListEnd
 \vspace{-17pt}
 
@@ -116,18 +123,18 @@
       {Amazon Robotics}{Dec. 2024 -- Present}
       {Software Engineer, Robotic Sortation Technology - ML / Optimization}{North Reading, MA}
       \resumeItemListStart
-        \resumeItem{Developed microservices using Go, Kotlin, and Scala on serverless AWS infrastructure, adhering to strict standards for monitoring, testing, and code safety to ensure constant uptime across Amazon's global network of Fulfillment Centers}
-        \resumeItem{Led the implementation of machine learning models to predict internal Fulfillment Center inefficiencies, with projected annual savings in the millions by optimizing robotic movement based on model insights}
-        \resumeItem{Implemented a new data fetching workflow for an internal Fulfillment Center dashboard project, reducing feature development time by over 60\% and doubling the number of features shipped per sprint}
+        \resumeItem{Developed microservices to plan robotic movements using Go, Kotlin, and Scala on serverless AWS infrastructure, adhering to strict standards for monitoring, testing, and uptime across Amazon's global network of fulfillment centers}
+        \resumeItem{Led the implementation of a real-time data collection, aggregation, and inference pipeline and optimization framework predicting and acting on internal fulfillment center inefficiencies with millions in projected annual savings}
+        \resumeItem{Implemented a new data fetching workflow for an internal fulfillment center dashboard project, reducing feature development time by over 60\% and doubling the number of features shipped per sprint}
+        \resumeItem{Conceptualized, planned, and implemented a Slack-based AI agent to recommend actions for associates using Bedrock}
       \resumeItemListEnd
 
     \resumeSubheading
       {Amazon Robotics}{Summer 2023}
       {Software Engineer Intern, QA Automation}{North Reading, MA}
       \resumeItemListStart
-        \resumeItem{Developed serverless React application for viewing results of systems testing as part of the QA Automation team}
-        \resumeItem{Modeled infrastructure and CI/CD using AWS Cloud Development Kit (CDK)  "Infrastructure As Code" framework}
-        \resumeItem{Completed project two weeks ahead of schedule and tailored the product more closely to end-user needs}
+        \resumeItem{Developed serverless React application for viewing results of systems testing as part of the QA Automation team, using AWS CDK "Infrastructure as Code" framework for infrastructure and CI/CD}
+        \resumeItem{Completed project two weeks ahead of schedule and tailored the product more closely to suit end-user needs}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -135,9 +142,8 @@
       {Software Engineer}{Bethlehem, PA}
       \resumeItemListStart
         \resumeItem{Lead developer of device interaction software for an AI-powered assistive system for the construction industry}
-        \resumeItem{Created multithreaded C++ programs to read, encode, process, and display camera and other sensor data wirelessly}
-        \resumeItem{Developed driver libraries for devices such as CV cameras, an SBG Systems IMU/GPS, and Micro-Epsilon LiDAR}
-        \resumeItem{Researched GPS technology and wrote software enabling centimeter-accurate GPS tracking using RTK positioning}
+        \resumeItem{10x-ed wireless image transmission data throughput by utilizing SIMD for real-time data compression and transmission }
+        \resumeItem{Developed C++ interfaces for CV cameras, SBG Systems IMU/GPS, and Micro-Epsilon LiDAR, enabling centimeter-accurate GPS tracking using RTK positioning}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
@@ -147,9 +153,9 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Loupt} $|$ \emph{Next.js, TypeScript, PostgreSQL} $|$ \href{https://loupt.co}{\underline{loupt.co}}}{2023 -- Present}
+          {\textbf{Loupt} $|$ \emph{Next.js, TypeScript, PostgreSQL} $|$ \href{https://loupt.co}{\underline{loupt.co}}}{2023 -- 2025}
           \resumeItemListStart
-            \resumeItem{Technical Co-Founder of a Regulation Crowdfunding platform aimed to democratize access to investment opportunities}
+            \resumeItem{Technical Co-Founder of a regulation crowdfunding platform aimed to democratize access to investment opportunities}
             \resumeItem{Designed and deployed Node.js services and Next.js web application with PostgreSQL on ECS with AWS services}
             \resumeItem{Integrated third-party APIs for investor KYC/AML, payment processing, and marketing automation}
             \resumeItem{Led development team and worked closely with institutional investors and stakeholders}
@@ -157,7 +163,7 @@
 \vspace{-14pt}
 
       \resumeProjectHeading
-          {\textbf{Newton Notes} $|$ \emph{SwiftUI} $|$ \href{https://gasek.net/newtonnotes}{\underline{gasek.net/newtonnotes}}}{2024 -- Present}
+          {\textbf{Newton Notes} $|$ \emph{SwiftUI} $|$ \href{https://gasek.net/newtonnotes}{\underline{gasek.net/newtonnotes}}}{2024}
           \resumeItemListStart
             \resumeItem{Developed a minimalist, privacy-focused gym workout tracking application using pure SwiftUI}
             \resumeItem{Implemented a clean, intuitive interface prioritizing simplicity and user privacy}
@@ -168,9 +174,8 @@
     \resumeProjectHeading
           {\textbf{CV Hazard Detection Model} $|$ \emph{Python, OpenCV, Keras, AWS SageMaker} $|$ {Lehigh Capstone - Fall 2023}}{2023}
           \resumeItemListStart
-            \resumeItem{Fine-tuned object detection model to dramatically increase performance of off-the-shelf models for autonomous cyclist assistance device with Bethlehem-based startup, Skillion}
+            \resumeItem{Fine-tuned object detection model to improve performance of off-the-shelf models by 100x for autonomous cyclist assistance device with Bethlehem-based startup, Skillion}
             \resumeItem{Used publicly available datasets including KITTI, Norwegian University of Science and Technology, and manually collected data labeled with in-house Python labeling program from Tesla Model S onboard camera}
-            \resumeItem{Achieved over 200x improvement in performance on nighttime headlight-facing captures}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
@@ -180,8 +185,8 @@
 \section{Technical Skills - Most Experience First}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, TypeScript/JavaScript, C, Java, Python, Go, HTML/CSS, Shell, Swift/SwiftUI, Rust, Kotlin, Scala} \\
-     \textbf{Frameworks/Technologies}{: AWS CDK, Next.js, React/React Native, PostgreSQL, MongoDB, Node.js, Docker, GCP} \\
+     \textbf{Languages}{: C++, TypeScript/JavaScript, C, Kotlin, Java, Python, Go, HTML/CSS, Shell, Swift/SwiftUI, Rust, Scala} \\
+     \textbf{Frameworks/Technologies}{: AWS CDK, Next.js, OpenSearch, React, PostgreSQL, Bedrock, Node.js, Docker, GCP} \\
      \textbf{Developer Tools}{:AWS, pgAdmin, Railway, Figma, Linux, CMake, Firebase, Xcode, Github Actions, LLMs} \\
     }}
  \end{itemize}
