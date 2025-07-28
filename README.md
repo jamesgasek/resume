@@ -1,3 +1,3 @@
 # resume
 
-[view here with latexonline.cc](https://texlive2020.latexonline.cc/compile?url=https://raw.githubusercontent.com/jamesgasek/resume/refs/heads/main/resume.tex)
+[view here with latexonline.cc](https://texlive2020.latexonline.cc/compile?git=https://github.com/jamesgasek/resume&target=resume.tex&command=pdflatex&force=true)
