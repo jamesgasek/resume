@@ -43,7 +43,7 @@ jobs:
       - name: Prepare PDF artifact
         run: |
           mkdir output
-          mv resume.pdf output/
+          mv resume.pdf output/gasekjames.pdf
       
       # Upload the directory contents as a Pages artifact
       - name: Upload Pages artifact
